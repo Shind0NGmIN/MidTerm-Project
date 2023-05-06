@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <h3>신동민's story</h3>
+            <div class="menu">
+                <ul class="inner_wrap">
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#Interest">Interest</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="inner_wrap">
+                <section id="About">
+                    <h3 class="title">신동민</h3>
+                    <ul class="list">
+                        <li>
+                            <span>출생</span>
+                            <p>1998. 12. 13</p>
+                        </li>
+                        <li>
+                            <span>사는 곳</span>
+                            <p>용인시 수지구</p>
+                        </li>
+                        <li>
+                            <span>메일</span>
+                            <p>dm4810@navar.com</p>
+                        </li>
+                    </ul>
+                    <h1>저는 단국대에서 통계학과 경영학을 전공하는 신동민입니다.<br />  </h1>
+                </section>
+                <section id="Education">
+                    <h3 class="title">전공</h3>
+
+                    <ul class="list">
+                        <li>
+                            <span>통계학</span>
+                            <p>본전공</p>
+                        </li>
+                        <li>
+                            <span>경영학</span>
+                            <p>부전공</p>
+                        </li>
+                    </ul>
+                </section>
+                <section id="Interest">
+                    <h3 class="title">취미</h3>
+
+                    <ul class="list">
+                        <li>
+                            <img src="./img/1.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/2.jpg" alt="">
+
+                        </li>
+                    </ul>
+                    <h1>여행가기와 맛집가기</h1>
+
+                </section>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
+<style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+a {color: #333; text-decoration: none;}
+li, ul {list-style: none;}
+
+.inner_wrap {max-width: 1440px; margin: 0 auto;}
+header {height: 150px; text-align: center; width: 100%; background-color: #333; color: #fff;}
+header h3 {font-size: 32px; line-height: 100px;}
+header .menu {width: 100%; border-top: 1px solid #fff; height: 50px;}
+header .menu .inner_wrap {display: flex; align-items: center; justify-content: center; width: 100%; height: 50px;}
+header .menu .inner_wrap li {height: 50px; width: calc(100% / 3); border-left: 1px solid #fff; border-right: 1px solid #fff;}
+header .menu .inner_wrap li:first-child {border-right: none;}
+header .menu .inner_wrap li a {color: #fff; line-height: 50px;}
+
+main {background-color: #f5f5f5;}
+main .inner_wrap {background-color: #ffffff;}
+
+section {padding: 100px 0;}
+#About { width: 100%; max-width: 1000px; margin: 0 auto;} 
+#About h1 {text-align: center; margin-top: 50px; line-height: 35px;} 
+#Interest h1 {text-align: center; padding-bottom: 100px; margin-top: 50px; line-height: 35px;} 
+.title{font-size: 50px; text-align: center; margin-bottom: 50px;}
+.list {display: flex; align-items: center; justify-content: space-between;}
+#About .list li {  width: calc(100% / 3); display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 50px;}
+#Education {border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;}
+#Education .list li { width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 50px;}
+#Interest .list {display: flex; align-items: center; justify-content: center;}
+#Interest .list li { width: 300px; height: 300px; margin: 10px;}
+#Interest .list li img {width: 100%; height: 100%; object-fit: cover;}
+.list span {font-size: 32px; font-weight: bold; margin-right: 10px; text-align: center;}
+#Education .list span {font-size: 32px; font-weight: bold; margin-right: 0; text-align: center;}
+.list p {font-size: 16px; text-align: center;}
+
+footer {width: 100%; height: 150px; background-color: #333;}
+
+</style>
